@@ -1,0 +1,11 @@
+module FTP
+{
+    struct File
+    {
+        string path;
+        unsigned short seq_num;
+	    sequence<octet> payload;
+        boolean is_done;
+    };
+    #pragma keylist File path
+};
